@@ -1,0 +1,199 @@
+/*Палитра цветов страницы
+Цвет заголовков: #212121;
+Цвет основного текста: #757575
+Цвет подписей: #FFFFFF
+Цвет анимаций: #2196F3
+Цвета лого: #000000 #2196F3
+Цвет полотен: #2F303A */
+/*Переменные */
+:root {
+  --heaer-color: #212121;
+  --text-color: #757575;
+  --main-header-color: #ffffff;
+  --animation-color: #2196f3;
+  --bg-color: #f5f4fa;
+  --hero-and-footer-color: #2f303a;
+  --portfolio-bgc: #e5e5e5;
+}
+
+/* Общие стили */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+/* Стили отдельных элементов */
+.header {
+  background-color: var(--main-header-color);
+}
+/*Стили лого*/
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.logo-beginning {
+  color: var(--animation-color);
+}
+.logo-ending {
+  color: #000;
+}
+.logo-ending-reverse {
+  color: var(--main-header-color);
+}
+.hero {
+  background-color: var(--hero-and-footer-color);
+}
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  color: var(--main-header-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-btn {
+  background-color: var(--animation-color);
+  color: var(--main-header-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.header {
+  color: var(--heaer-color);
+}
+.h2-type {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.h3-type {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.h3-type-studio {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.h3-type-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+
+  letter-spacing: 0.06em;
+}
+.nav-link {
+  color: var(--heaer-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.nav-link:hover {
+  color: var(--animation-color);
+}
+.active-nav-link {
+  color: var(--animation-color);
+}
+.contact-link {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contact-link:hover {
+  color: var(--animation-color);
+}
+.idea-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.card-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.card-section {
+  background-color: var(--bg-color);
+}
+.card {
+  background-color: var(--main-header-color);
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.footer {
+  background-color: var(--hero-and-footer-color);
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover {
+  color: var(--animation-color);
+}
+.address-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.address {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+/*кнопки портфолио*/
+.portfolio-btn {
+  color: var(--heaer-color);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn-active {
+  background-color: var(--animation-color);
+  color: var(--main-header-color);
+}
