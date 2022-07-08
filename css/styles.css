@@ -147,6 +147,8 @@ body {
   line-height: calc(36 / 18);
   color: var(--header-color);
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .nav-link {
   color: var(--header-color);
@@ -307,4 +309,23 @@ body {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+}
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-card {
+  margin-bottom: 30px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.portfolio-card-text {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
