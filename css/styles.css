@@ -7,7 +7,7 @@
 Цвет полотен: #2F303A */
 /*Переменные */
 :root {
-  --heaer-color: #212121;
+  --header-color: #212121;
   --text-color: #757575;
   --main-header-color: #ffffff;
   --animation-color: #2196f3;
@@ -16,22 +16,45 @@
   --portfolio-bgc: #e5e5e5;
 }
 
+/*reset styles*/
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Общие стили */
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   color: var(--text-color);
 }
-a {
-  text-decoration: none;
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-ul {
-  list-style-type: none;
-}
-/* Стили отдельных элементов */
 .header {
   background-color: var(--main-header-color);
 }
+
+/* Стили отдельных элементов */
+
 /*Стили лого*/
 .logo {
   font-family: "Raleway";
@@ -76,21 +99,19 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.header {
-  color: var(--heaer-color);
-}
 .h2-type {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--header-color);
 }
 .h3-type {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-
+  color: var(--header-color);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -101,16 +122,17 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--header-color);
 }
 .h3-type-portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
-
+  color: var(--header-color);
   letter-spacing: 0.06em;
 }
 .nav-link {
-  color: var(--heaer-color);
+  color: var(--header-color);
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -180,7 +202,7 @@ ul {
 }
 /*кнопки портфолио*/
 .portfolio-btn {
-  color: var(--heaer-color);
+  color: var(--header-color);
   font-weight: 500;
   font-size: 16px;
   font-family: Roboto, sans-serif;
@@ -196,4 +218,26 @@ ul {
 .portfolio-btn-active {
   background-color: var(--animation-color);
   color: var(--main-header-color);
+}
+/*other containers*/
+
+.header-container {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-nav-list {
+  margin-left: 93px;
+}
+.header-address-list {
+  margin-left: 331px;
+}
+.header-nav-list-item:nth-child(-n + 2) {
+  margin-right: 50px;
+}
+.header-address-list-item:nth-child(-n + 1) {
+  margin-right: 50px;
 }
