@@ -79,8 +79,6 @@ body {
   background-color: var(--hero-and-footer-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 .hero-header {
   font-weight: 900;
@@ -147,8 +145,7 @@ body {
   line-height: calc(36 / 18);
   color: var(--header-color);
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .nav-link {
   color: var(--header-color);
@@ -183,6 +180,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 .card-section {
   background-color: var(--bg-color);
@@ -291,22 +289,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.card-header {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
 .footer-logo {
   margin-bottom: 20px;
 }
 .address-item {
   margin-bottom: 9px;
 }
-.section {
-  margin-bottom: 94px;
-}
 .category-list {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -317,6 +308,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 .portfolio-card {
   margin-bottom: 30px;
@@ -325,7 +317,19 @@ body {
   border-bottom: 1px solid #eee;
 }
 .portfolio-card-text {
-  margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.benefits-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.service-section {
+  padding-bottom: 94px;
+}
+.all-card-text {
+  align-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
