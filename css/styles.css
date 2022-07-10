@@ -296,8 +296,7 @@ body {
   margin-bottom: 9px;
 }
 .category-list {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -308,18 +307,17 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .portfolio-card {
   margin-bottom: 30px;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 .portfolio-card-text {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .benefits-section {
   padding-top: 94px;
@@ -332,4 +330,14 @@ body {
   align-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.portfolio-card-description {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.03em;
 }
